@@ -6,7 +6,7 @@ const blogRoutes = require('./routes/blogRoutes');
 const app = express();
 
 // connection string
-const url = 'mongodb+srv://rohan-admin:test1234@cluster0.j7uqi.mongodb.net/nodejstutorial?retryWrites=true&w=majority';
+const url = 'mongodb+srv://user-name:<password>@cluster0.j7uqi.mongodb.net/nodejstutorial?retryWrites=true&w=majority';
 mongoose.connect(url)
     .then((result) => { console.log('connected to db'); app.listen(3000); })
     .catch((err) => console.log(err));
